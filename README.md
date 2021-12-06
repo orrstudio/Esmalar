@@ -1,5 +1,3 @@
-
-
 Tüm bilgiler<br/><a href='https://www.mihr.com' target="_blank">
 www.MIHR.com</a><br/>
 sitesinden alınmıştır.<br/>
@@ -16,3 +14,13 @@ Allah zikrinizi daim etsin inşallah.<br/>
 Sizleri çok amma çok seviyoruz!<br/>
 Saygı ve sevgilerimizle.<br/>
 Allah hepinizden sonsuz razı olsun.</p><br/>
+
+## Əlavə olunması lazım olan funksiyalar:
+- 1. Açılan MENU (aşağı açılır və içində siyahı):
+	- 1.1. Avtomatik tarixe keçid "BU GÜN" düyməsi.
+	- 1.2. Həftə günlərinin düymələrini.
+	- 1.3. Tarix və Hicri tarix.
+	- 1.4. Namaz vaxtın.
+	- 1.5. Çəkilən əsmaları gizlətmək düyməsi və yaxud ayarları.
+- 2. Android və iPhone üzərindən App düzəltmək.
+- 3. 
