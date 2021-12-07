@@ -13,14 +13,5 @@ Allah zikrinizi daim etsin inşallah.<br/>
 # HER ŞEY ÇOK GÜZEL!!!
 Sizleri çok amma çok seviyoruz!<br/>
 Saygı ve sevgilerimizle.<br/>
-Allah hepinizden sonsuz razı olsun.</p><br/>
+Allah hepinizden sonsuz razı olsun.</p>
 
-## Əlavə olunması lazım olan funksiyalar:
-- 1. Açılan MENU (aşağı açılır və içində siyahı):
-	- 1.1. Avtomatik tarixe keçid "BU GÜN" düyməsi.
-	- 1.2. Həftə günlərinin düymələrini.
-	- 1.3. Tarix və Hicri tarix.
-	- 1.4. Namaz vaxtın.
-	- 1.5. Çəkilən əsmaları gizlətmək düyməsi və yaxud ayarları.
-- 2. Android və iPhone üzərindən App düzəltmək.
-- 3. 
