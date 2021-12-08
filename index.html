@@ -426,6 +426,16 @@ document.getElementById('MenuButton').style.display = "block";}
 </div> 
 <!-- END BUTTONS DIV -->
 
+<!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
+<script type="text/javascript">
+document.addEventListener('play', function(e){
+    var audios = document.getElementsByTagName('audio');
+    for(var i = 0, len = audios.length; i < len;i++){
+    if(audios[i] != e.target){
+    audios[i].pause();}}}, true);
+</script>
+<!-- END NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
+
 <!-- ANLAM ve AYETLER DIV's -->
 <div align="center" style="color: grey; display:block; text-align: right; padding: 0.2em 0.5em 0.2em 0.5em; font-size: 50px; font-family: Arial;"><i class="fa fa-cogs"></i> ESMA AYETİ & ANLAMI <i class="fa fa-hand-o-right"></i>
 <button type="submit" id="ButtonId" onclick="changeColor();" class="btn"  style="font-size: 60px; font-family: Arial; text-align: center; width: 160px; height: 90px;  border: solid 2px LightYellow; border-radius: 20px; font-weight: bold; color: LightYellow; background-color: red;">OFF</button>
