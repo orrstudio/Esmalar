@@ -19,7 +19,7 @@
 	     strong {	font-size: 80px;}
 .beautifully {
 				text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow; 
-				padding: 0.5em 0.5em 0.2em 0.5em; 
+				padding: 120px 0.5em 0.2em 0.5em; 
 				color: LightYellow; 
 				font-size: 80px; 
 				font-family: 'Arial'; 
@@ -74,27 +74,252 @@ input[type=checkbox] + label:before {content: "\1f497";
 					background-color: SeaGreen;
 					border: solid 2px LightYellow;
 					vertical-align:top;}
+.menuBTN {			color: LightYellow;
+					background-color: SeaGreen;
+					display:inline-block;
+					border: 0px;
+					text-align: right; 
+					font-size: 60px;}
+.menuBTNHeart {	color: LightYellow;
+					background-color: SeaGreen;
+					display:inline-block;
+					width: 190px; 
+					border: solid 2px LightYellow; 
+					border-radius: 20px; 
+					font-size: 45px;}
+.btn {				font-size: 45px; 
+					text-align: center; 
+					display:inline-block;
+					width: 160px; 
+					height: 70px;  
+					border: solid 2px LightYellow; 
+					border-radius: 20px; 
+					color: LightYellow; 
+					background-color: red;}
 .btn-group button {	background-color: SeaGreen; 
 					border: 2px solid LightYellow; 
-					border-radius: 20%; /*закругленные углы*/
+					border-radius: 20px; /*закругленные углы*/
 					color: LightYellow;
-					width: 12%;
-					height: 100px;
+					width: 70%;
 					align-items: center;
-					font-size: 80px;
-					font-weight: bold;
-					text-align: center; /*выравнивание текста*/
-					margin: 0px 0px 20px 0px;  /*расположение от верха, правой стооны, низа и левой стооны*/}
-.btn-group button:hover {background-color: LightYellow; border: 2px solid LightYellow; color: SeaGreen; }
+					font-size: 60px;
+					text-align: center;
+					padding: 2px;
+					margin: 2px 0px 2px 0px;  /*расположение от верха, правой стооны, низа и левой стооны*/}
 /*<!-- END BUTTONS STYLE -->*/
+
+/*<!-- NAVBAR  STYLE -->*/
+ /* NAVBAR UTILITIES */
+* { margin: 0; padding: 0; box-sizing: border-box;}
+/* NAVBAR STYLING STARTS */
+.navbar { 		display: flex; 
+				justify-content: space-between; 
+				padding: 10px;
+				background-color:SeaGreen;
+				font-weight: bold;
+				position: fixed;
+				width:100%;
+				z-index: 1000;}
+/* LOGO */
+.logo {			color: LightYellow; 
+				font-size: 60px;}
+.menu {			position: absolute; right: 0; left: 0;}
 
 </style> 
 <!-- END STYLES -->
 
+     <!-- NAVBAR -->
+  <nav class="navbar" id="top_nav">
+     <!-- LOGO -->
+     <div class="logo">&nbsp;ESMAÜL HÜSNA</div>	
+     <!-- NAVIGATION MENU -->
+
+<button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN"> &nbsp;<i class="fa fa-bars"></i>&nbsp;</button>
+<button id="ButtonMENUX" onclick="BtnMENUX()" class="menuBTN" style="display:none;">
+&nbsp;<i class="fa fa-times"></i>&nbsp;</button>
+     <script>function BtnMENU() {
+     document.getElementById('MENUSECTION').style.display = "block";
+     document.getElementById('ButtonMENU').style.display = "none";
+     document.getElementById('ButtonMENUX').style.display = "block";}</script>
+          <script>function BtnMENUX() {
+          document.getElementById('MENUSECTION').style.display = "none";
+          document.getElementById('ButtonMENU').style.display = "block";
+          document.getElementById('ButtonMENUX').style.display = "none";}</script>
+       </div>  
+
+<!-- MENUSECTION DIV -->
+<div id="MENUSECTION" style="margin-top: 75px; display:none; background-color: MediumSeaGreen;" class="menu">
+
+<!-- GROUPBUTTONS DIV -->
+<div id="GroupButtons" style="display:block; padding: 0.5em 0em 0em 0em; font-size: 50px; font-family: Arial;" class="btn-group" align="center">
+ <!-- HAFATA BUTTONS & scripts -->
+<button onclick="myFunction1()">I - PAZARTESİ</button>
+<button onclick="myFunction2()">II - SALI</button>
+<button onclick="myFunction3()">III - ÇARŞAMBA</button>
+<button onclick="myFunction4()">IV - PERŞEMBE</button>
+<button onclick="myFunction5()">V - CUMA</button>
+<button onclick="myFunction6()">VI - CUMARTESİ</button>
+<button onclick="myFunction7()">VII - PAZAR</button>
+<script>
+function myFunction1() {
+document.getElementById('myDIV1').style.display = 'block';
+document.getElementById('myDIV11').style.display = 'block';
+document.getElementById('myDIV2').style.display = 'none';
+document.getElementById('myDIV22').style.display = 'none';
+document.getElementById('myDIV3').style.display = 'none'; 
+document.getElementById('myDIV33').style.display = 'none';
+document.getElementById('myDIV4').style.display = 'none'; 
+document.getElementById('myDIV44').style.display = 'none';
+document.getElementById('myDIV5').style.display = 'none'; 
+document.getElementById('myDIV55').style.display = 'none';
+document.getElementById('myDIV6').style.display = 'none'; 
+document.getElementById('myDIV66').style.display = 'none';
+document.getElementById('myDIV7').style.display = 'none'; 
+document.getElementById('myDIV77').style.display = 'none';
+        document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";}
+function myFunction2() {
+document.getElementById('myDIV1').style.display = 'none';
+document.getElementById('myDIV11').style.display = 'none';
+document.getElementById('myDIV2').style.display = 'block';
+document.getElementById('myDIV22').style.display = 'block';
+document.getElementById('myDIV3').style.display = 'none'; 
+document.getElementById('myDIV33').style.display = 'none';
+document.getElementById('myDIV4').style.display = 'none'; 
+document.getElementById('myDIV44').style.display = 'none';
+document.getElementById('myDIV5').style.display = 'none'; 
+document.getElementById('myDIV55').style.display = 'none';
+document.getElementById('myDIV6').style.display = 'none'; 
+document.getElementById('myDIV66').style.display = 'none';
+document.getElementById('myDIV7').style.display = 'none'; 
+document.getElementById('myDIV77').style.display = 'none';
+        document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";}
+function myFunction3() {
+document.getElementById('myDIV1').style.display = 'none';
+document.getElementById('myDIV11').style.display = 'none';
+document.getElementById('myDIV2').style.display = 'none';
+document.getElementById('myDIV22').style.display = 'none';
+document.getElementById('myDIV3').style.display = 'block'; 
+document.getElementById('myDIV33').style.display = 'block';
+document.getElementById('myDIV4').style.display = 'none'; 
+document.getElementById('myDIV44').style.display = 'none';
+document.getElementById('myDIV5').style.display = 'none'; 
+document.getElementById('myDIV55').style.display = 'none';
+document.getElementById('myDIV6').style.display = 'none'; 
+document.getElementById('myDIV66').style.display = 'none';
+document.getElementById('myDIV7').style.display = 'none'; 
+document.getElementById('myDIV77').style.display = 'none';
+        document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";}
+function myFunction4() {
+document.getElementById('myDIV1').style.display = 'none';
+document.getElementById('myDIV11').style.display = 'none';
+document.getElementById('myDIV2').style.display = 'none';
+document.getElementById('myDIV22').style.display = 'none';
+document.getElementById('myDIV3').style.display = 'none'; 
+document.getElementById('myDIV33').style.display = 'none';
+document.getElementById('myDIV4').style.display = 'block'; 
+document.getElementById('myDIV44').style.display = 'block';
+document.getElementById('myDIV5').style.display = 'none'; 
+document.getElementById('myDIV55').style.display = 'none';
+document.getElementById('myDIV6').style.display = 'none'; 
+document.getElementById('myDIV66').style.display = 'none';
+document.getElementById('myDIV7').style.display = 'none'; 
+document.getElementById('myDIV77').style.display = 'none';
+        document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";}
+function myFunction5() {
+document.getElementById('myDIV1').style.display = 'none';
+document.getElementById('myDIV11').style.display = 'none';
+document.getElementById('myDIV2').style.display = 'none';
+document.getElementById('myDIV22').style.display = 'none';
+document.getElementById('myDIV3').style.display = 'none'; 
+document.getElementById('myDIV33').style.display = 'none';
+document.getElementById('myDIV4').style.display = 'none'; 
+document.getElementById('myDIV44').style.display = 'none';
+document.getElementById('myDIV5').style.display = 'block'; 
+document.getElementById('myDIV55').style.display = 'block';
+document.getElementById('myDIV6').style.display = 'none'; 
+document.getElementById('myDIV66').style.display = 'none';
+document.getElementById('myDIV7').style.display = 'none'; 
+document.getElementById('myDIV77').style.display = 'none';
+        document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";}
+function myFunction6() {
+document.getElementById('myDIV1').style.display = 'none';
+document.getElementById('myDIV11').style.display = 'none';
+document.getElementById('myDIV2').style.display = 'none';
+document.getElementById('myDIV22').style.display = 'none';
+document.getElementById('myDIV3').style.display = 'none'; 
+document.getElementById('myDIV33').style.display = 'none';
+document.getElementById('myDIV4').style.display = 'none'; 
+document.getElementById('myDIV44').style.display = 'none';
+document.getElementById('myDIV5').style.display = 'none'; 
+document.getElementById('myDIV55').style.display = 'none';
+document.getElementById('myDIV6').style.display = 'block'; 
+document.getElementById('myDIV66').style.display = 'block';
+document.getElementById('myDIV7').style.display = 'none'; 
+document.getElementById('myDIV77').style.display = 'none';
+        document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";}
+function myFunction7() {
+document.getElementById('myDIV1').style.display = 'none';
+document.getElementById('myDIV11').style.display = 'none';
+document.getElementById('myDIV2').style.display = 'none';
+document.getElementById('myDIV22').style.display = 'none';
+document.getElementById('myDIV3').style.display = 'none'; 
+document.getElementById('myDIV33').style.display = 'none';
+document.getElementById('myDIV4').style.display = 'none'; 
+document.getElementById('myDIV44').style.display = 'none';
+document.getElementById('myDIV5').style.display = 'none'; 
+document.getElementById('myDIV55').style.display = 'none';
+document.getElementById('myDIV6').style.display = 'none'; 
+document.getElementById('myDIV66').style.display = 'none';
+document.getElementById('myDIV7').style.display = 'block'; 
+document.getElementById('myDIV77').style.display = 'block';
+        document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";}
+</script>
+<!-- END HAFTA BUTTONS & scripts -->
+</div> 
+<!-- END GROUPBUTTONS DIV -->
+   
+<!-- ANLAM ve AYETLER DIV's -->
+<div id="AyetAnlam" style="color: LightYellow; display:block; text-align: center; padding: 15px 0.5em 15px 0.5em; font-size: 40px; font-family: Arial;">
+<button type="submit" id="ButtonId" onclick="changeColor();" class="btn">OFF</button>&nbsp;<i class="fa fa-hand-o-left"></i>&nbsp;ESMA AYETİ & ANLAMI&nbsp;&nbsp;&nbsp;&nbsp;
+<script>	$('.btn').click(function(){$(".block_with_text").fadeToggle(500); $(this).text(function(i, text){return text === "OFF" ? "ON" : "OFF";}); }); 
+var colors = ["SeaGreen", "red"]; var colorIndex = 0; function changeColor() {var col = document.getElementById("ButtonId"); if(colorIndex >= colors.length) {colorIndex = 0;}   col.style.backgroundColor = colors[colorIndex]; colorIndex++;	
+	document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";}
+</script>
+     <!-- CHEKBOX -->
+<button onclick="ChekBoxClear()" class="menuBTNHeart">
+&#128154;&#10146;&#128151;</button>
+<script>
+function ChekBoxClear() {const result = confirm('Onayları silmek istiyor musunuz?');
+	document.getElementById('MENUSECTION').style.display = "none";
+        document.getElementById('ButtonMENU').style.display = "block";
+        document.getElementById('ButtonMENUX').style.display = "none";
+if (result) {$("[class='chekboxInput']:checked").prop("checked", false);} else {}}
+</script>
+</div>
+
+</div>
+<!-- END MENU SECTION DIV -->
+   </nav>
+   <!-- END NAVBAR -->  
+   
 <!-- WEEK NAME DIV's -->
-<div id="myDIV0" align="center" class="beautifully" style="display:block">
-	ESMAÜL HÜSNA</div>	
-<div id="myDIV1" align="center" class="beautifully" style="display:none">
+<div id="myDIV1" align="center" class="beautifully" style="display:block">
 	I - PAZARTESİ</div>	
 <div id="myDIV2" align="center" class="beautifully" style="display:none">
 	II - SALI</div>	
@@ -110,323 +335,6 @@ input[type=checkbox] + label:before {content: "\1f497";
 	VII - PAZAR</div>		
 <!-- END WEEK NAME DIV's -->
 
-<div id="MenuButton" style="color: grey; display:block; text-align: right; padding: 0.5em 0.5em 0em 0.5em; font-size: 50px; font-family: Arial;" class="btn-group" align="center">
-<i class="fa fa-cogs"></i> HAFTANIN GÜNÜ <i class="fa fa-hand-o-right"></i> 
-<button onclick="deleteThis(this)"><i class="fa fa-bars"></i></button>
-<script>var deleteThis = function(elem){
-	$("[class='chekboxInput']:checked").prop("checked", false)
-        document.getElementById('MenuButton').style.display = "none";
-        document.getElementById('myDIV0').style.display = "block";
-        document.getElementById('myDIV1').style.display = "none";
-        document.getElementById('myDIV2').style.display = "none";
-        document.getElementById('myDIV3').style.display = "none";
-        document.getElementById('myDIV4').style.display = "none";
-        document.getElementById('myDIV5').style.display = "none";
-        document.getElementById('myDIV6').style.display = "none";
-        document.getElementById('myDIV7').style.display = "none";
-        document.getElementById('myDIV11').style.display = "none";
-        document.getElementById('myDIV22').style.display = "none";
-        document.getElementById('myDIV33').style.display = "none";
-        document.getElementById('myDIV44').style.display = "none";
-        document.getElementById('myDIV55').style.display = "none";
-        document.getElementById('myDIV66').style.display = "none";
-        document.getElementById('myDIV77').style.display = "none";
-        document.title = "ESMAÜL HÜSNA";
-        document.getElementById('GroupButtons').style.display = "block";}</script>
-</div>  
-
-<!-- BUTTONS DIV -->
-<div id="GroupButtons" style="display:none; padding: 0.5em 0em 0em 0em; font-size: 50px; font-family: Arial;" class="btn-group" align="center">
-
- <!-- BUTTON I & script -->
-<button onclick="myFunction1()">I</button>
-<script>function myFunction1() {var 
-xx1 = document.getElementById('myDIV11'); 
-xx2 = document.getElementById('myDIV22');
-xx3 = document.getElementById('myDIV33'); 
-xx4 = document.getElementById('myDIV44'); 
-xx5 = document.getElementById('myDIV55'); 
-xx6 = document.getElementById('myDIV66'); 
-xx7 = document.getElementById('myDIV77');  
-x0 = document.getElementById('myDIV0'); 
-x1 = document.getElementById('myDIV1'); 
-x2 = document.getElementById('myDIV2');
-x3 = document.getElementById('myDIV3'); 
-x4 = document.getElementById('myDIV4'); 
-x5 = document.getElementById('myDIV5'); 
-x6 = document.getElementById('myDIV6'); 
-x7 = document.getElementById('myDIV7');  
-if (x1.style.display === 'none') {
-xx1.style.display = 'block';
-xx2.style.display = 'none';
-xx3.style.display = 'none';
-xx4.style.display = 'none';
-xx5.style.display = 'none';
-xx6.style.display = 'none';
-xx7.style.display = 'none';
-x0.style.display = 'none';
-x1.style.display = 'block';
-x2.style.display = 'none';
-x3.style.display = 'none';
-x4.style.display = 'none';
-x5.style.display = 'none';
-x6.style.display = 'none';
-x7.style.display = 'none'; 
-} else {x0.style.display = 'none'; x1.style.display = 'block'; xx1.style.display = 'block';}
-document.title = "I - PAZARTESİ ESMASI";
-document.getElementById('GroupButtons').style.display = "none";
-document.getElementById('MenuButton').style.display = "block";}
-</script>
-<!-- END BUTTON I & script -->
-
-<!-- BUTTON II & script -->
-<button onclick="myFunction2()">II</button>
-<script>function myFunction2() {var 
-xx1 = document.getElementById('myDIV11'); 
-xx2 = document.getElementById('myDIV22');
-xx3 = document.getElementById('myDIV33'); 
-xx4 = document.getElementById('myDIV44'); 
-xx5 = document.getElementById('myDIV55'); 
-xx6 = document.getElementById('myDIV66'); 
-xx7 = document.getElementById('myDIV77');  
-x0 = document.getElementById('myDIV0'); 
-x1 = document.getElementById('myDIV1'); 
-x2 = document.getElementById('myDIV2');
-x3 = document.getElementById('myDIV3'); 
-x4 = document.getElementById('myDIV4'); 
-x5 = document.getElementById('myDIV5'); 
-x6 = document.getElementById('myDIV6'); 
-x7 = document.getElementById('myDIV7');  
-if (x2.style.display === 'none') {
-xx2.style.display = 'block';
-xx1.style.display = 'none';
-xx3.style.display = 'none';
-xx4.style.display = 'none';
-xx5.style.display = 'none';
-xx6.style.display = 'none';
-xx7.style.display = 'none';
-x2.style.display = 'block';
-x0.style.display = 'none';
-x1.style.display = 'none';
-x3.style.display = 'none';
-x4.style.display = 'none';
-x5.style.display = 'none';
-x6.style.display = 'none';
-x7.style.display = 'none';
-} else {x0.style.display = 'none'; x2.style.display = 'block'; xx2.style.display = 'block';}
-document.title = "II - SALI ESMASI";
-document.getElementById('GroupButtons').style.display = "none";
-document.getElementById('MenuButton').style.display = "block";}
-</script>
-<!-- END BUTTON II & script -->
-
-<!-- BUTTON III & script -->
-<button onclick="myFunction3()">III</button>
-<script>function myFunction3() {var 
-xx1 = document.getElementById('myDIV11'); 
-xx2 = document.getElementById('myDIV22');
-xx3 = document.getElementById('myDIV33'); 
-xx4 = document.getElementById('myDIV44'); 
-xx5 = document.getElementById('myDIV55'); 
-xx6 = document.getElementById('myDIV66'); 
-xx7 = document.getElementById('myDIV77');  
-x0 = document.getElementById('myDIV0'); 
-x1 = document.getElementById('myDIV1'); 
-x2 = document.getElementById('myDIV2');
-x3 = document.getElementById('myDIV3'); 
-x4 = document.getElementById('myDIV4'); 
-x5 = document.getElementById('myDIV5'); 
-x6 = document.getElementById('myDIV6'); 
-x7 = document.getElementById('myDIV7');  
-if (x3.style.display === 'none') {
-xx3.style.display = 'block';
-xx1.style.display = 'none';
-xx2.style.display = 'none';
-xx4.style.display = 'none';
-xx5.style.display = 'none';
-xx6.style.display = 'none';
-xx7.style.display = 'none';
-x0.style.display = 'none';
-x3.style.display = 'block';
-x1.style.display = 'none';
-x2.style.display = 'none';
-x4.style.display = 'none';
-x5.style.display = 'none';
-x6.style.display = 'none';
-x7.style.display = 'none';
-} else {x0.style.display = 'none'; x3.style.display = 'block'; xx3.style.display = 'block';}
-document.title = "III - ÇARŞAMBA ESMASI";
-document.getElementById('GroupButtons').style.display = "none";
-document.getElementById('MenuButton').style.display = "block";}
-</script>
-<!-- END BUTTON III & script -->
-
-<!-- BUTTON IV & script -->
-<button onclick="myFunction4()">IV</button>
-<script>function myFunction4() {var 
-xx1 = document.getElementById('myDIV11'); 
-xx2 = document.getElementById('myDIV22');
-xx3 = document.getElementById('myDIV33'); 
-xx4 = document.getElementById('myDIV44'); 
-xx5 = document.getElementById('myDIV55'); 
-xx6 = document.getElementById('myDIV66'); 
-xx7 = document.getElementById('myDIV77');  
-x0 = document.getElementById('myDIV0'); 
-x1 = document.getElementById('myDIV1'); 
-x2 = document.getElementById('myDIV2');
-x3 = document.getElementById('myDIV3'); 
-x4 = document.getElementById('myDIV4'); 
-x5 = document.getElementById('myDIV5'); 
-x6 = document.getElementById('myDIV6'); 
-x7 = document.getElementById('myDIV7');  
-if (x4.style.display === 'none') {
-xx4.style.display = 'block';
-xx1.style.display = 'none';
-xx2.style.display = 'none';
-xx3.style.display = 'none';
-xx5.style.display = 'none';
-xx6.style.display = 'none';
-xx7.style.display = 'none';
-x0.style.display = 'none';
-x4.style.display = 'block';
-x1.style.display = 'none';
-x2.style.display = 'none';
-x3.style.display = 'none';
-x5.style.display = 'none';
-x6.style.display = 'none';
-x7.style.display = 'none';
-} else {x0.style.display = 'none'; x4.style.display = 'block'; xx4.style.display = 'block';}
-document.title = "IV - PERŞEMBE ESMASI";
-document.getElementById('GroupButtons').style.display = "none";
-document.getElementById('MenuButton').style.display = "block";}
-</script>
-<!-- END BUTTON IV & script -->
-
-<!-- BUTTON V & script -->
-<button onclick="myFunction5()">V</button>
-<script>function myFunction5() {var 
-xx1 = document.getElementById('myDIV11'); 
-xx2 = document.getElementById('myDIV22');
-xx3 = document.getElementById('myDIV33'); 
-xx4 = document.getElementById('myDIV44'); 
-xx5 = document.getElementById('myDIV55'); 
-xx6 = document.getElementById('myDIV66'); 
-xx7 = document.getElementById('myDIV77');  
-x0 = document.getElementById('myDIV0'); 
-x1 = document.getElementById('myDIV1'); 
-x2 = document.getElementById('myDIV2');
-x3 = document.getElementById('myDIV3'); 
-x4 = document.getElementById('myDIV4'); 
-x5 = document.getElementById('myDIV5'); 
-x6 = document.getElementById('myDIV6'); 
-x7 = document.getElementById('myDIV7');  
-if (x5.style.display === 'none') {
-xx5.style.display = 'block';
-xx1.style.display = 'none';
-xx2.style.display = 'none';
-xx3.style.display = 'none';
-xx4.style.display = 'none';
-xx6.style.display = 'none';
-xx7.style.display = 'none';
-x0.style.display = 'none';
-x5.style.display = 'block';
-x1.style.display = 'none';
-x2.style.display = 'none';
-x3.style.display = 'none';
-x4.style.display = 'none';
-x6.style.display = 'none';
-x7.style.display = 'none';
-} else {x0.style.display = 'none'; x5.style.display = 'block'; xx5.style.display = 'block';}
-document.title = "V - CUMA ESMASI";
-document.getElementById('GroupButtons').style.display = "none";
-document.getElementById('MenuButton').style.display = "block";}
-</script>
-<!-- END BUTTON V & script -->
-
-<!-- BUTTON VI & script -->
-<button onclick="myFunction6()">VI</button>
-<script>function myFunction6() {var 
-xx1 = document.getElementById('myDIV11'); 
-xx2 = document.getElementById('myDIV22');
-xx3 = document.getElementById('myDIV33'); 
-xx4 = document.getElementById('myDIV44'); 
-xx5 = document.getElementById('myDIV55'); 
-xx6 = document.getElementById('myDIV66'); 
-xx7 = document.getElementById('myDIV77');  
-x0 = document.getElementById('myDIV0'); 
-x1 = document.getElementById('myDIV1'); 
-x2 = document.getElementById('myDIV2');
-x3 = document.getElementById('myDIV3'); 
-x4 = document.getElementById('myDIV4'); 
-x5 = document.getElementById('myDIV5'); 
-x6 = document.getElementById('myDIV6'); 
-x7 = document.getElementById('myDIV7');  
-if (x6.style.display === 'none') {
-xx6.style.display = 'block';
-xx1.style.display = 'none';
-xx2.style.display = 'none';
-xx3.style.display = 'none';
-xx4.style.display = 'none';
-xx5.style.display = 'none';
-xx7.style.display = 'none';
-x0.style.display = 'none';
-x6.style.display = 'block';
-x1.style.display = 'none';
-x2.style.display = 'none';
-x3.style.display = 'none';
-x4.style.display = 'none';
-x5.style.display = 'none';
-x7.style.display = 'none';
-} else {x0.style.display = 'none'; x6.style.display = 'block'; xx6.style.display = 'block';}
-document.title = "VI - CUMARTESİ ESMASI";
-document.getElementById('GroupButtons').style.display = "none";
-document.getElementById('MenuButton').style.display = "block";}
-</script>
-<!-- END BUTTON VI & script -->
-
-<!-- BUTTON VII & script -->
-<button onclick="myFunction7()">VII</button>
-<script>function myFunction7() {var 
-xx1 = document.getElementById('myDIV11'); 
-xx2 = document.getElementById('myDIV22');
-xx3 = document.getElementById('myDIV33'); 
-xx4 = document.getElementById('myDIV44'); 
-xx5 = document.getElementById('myDIV55'); 
-xx6 = document.getElementById('myDIV66'); 
-xx7 = document.getElementById('myDIV77');  
-x0 = document.getElementById('myDIV0'); 
-x1 = document.getElementById('myDIV1'); 
-x2 = document.getElementById('myDIV2');
-x3 = document.getElementById('myDIV3'); 
-x4 = document.getElementById('myDIV4'); 
-x5 = document.getElementById('myDIV5'); 
-x6 = document.getElementById('myDIV6'); 
-x7 = document.getElementById('myDIV7');  
-if (x7.style.display === 'none') {
-xx7.style.display = 'block';
-xx1.style.display = 'none';
-xx2.style.display = 'none';
-xx3.style.display = 'none';
-xx4.style.display = 'none';
-xx5.style.display = 'none';
-xx6.style.display = 'none';
-x0.style.display = 'none';
-x7.style.display = 'block';
-x1.style.display = 'none';
-x2.style.display = 'none';
-x3.style.display = 'none';
-x4.style.display = 'none';
-x5.style.display = 'none';
-x6.style.display = 'none'; 
-} else {x0.style.display = 'none'; x7.style.display = 'block'; xx7.style.display = 'block';}
-document.title = "VII - PAZAR ESMASI";
-document.getElementById('GroupButtons').style.display = "none";
-document.getElementById('MenuButton').style.display = "block";}
-</script>
-<!-- END BUTTON VII & script -->
-</div> 
-<!-- END BUTTONS DIV -->
-
 <!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
 <script type="text/javascript">
 document.addEventListener('play', function(e){
@@ -437,13 +345,7 @@ document.addEventListener('play', function(e){
 </script>
 <!-- END NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
 
-<!-- ANLAM ve AYETLER DIV's -->
-<div align="center" style="color: grey; display:block; text-align: right; padding: 0.2em 0.5em 0.2em 0.5em; font-size: 50px; font-family: Arial;"><i class="fa fa-cogs"></i> ESMA AYETİ & ANLAMI <i class="fa fa-hand-o-right"></i>
-<button type="submit" id="ButtonId" onclick="changeColor();" class="btn"  style="font-size: 60px; font-family: Arial; text-align: center; width: 160px; height: 90px;  border: solid 2px LightYellow; border-radius: 20px; font-weight: bold; color: LightYellow; background-color: red;">OFF</button>
-<script>	$('.btn').click(function(){$(".block_with_text").fadeToggle(500); $(this).text(function(i, text){return text === "OFF" ? "ON" : "OFF";}); }); 
-var colors = ["SeaGreen", "red"]; var colorIndex = 0; function changeColor() {var col = document.getElementById("ButtonId"); if( colorIndex >= colors.length ) { colorIndex = 0; }   col.style.backgroundColor = colors[colorIndex]; colorIndex++; }</script>
-</div>
-<!-- END ANLAM ve AYETLER DIV's -->
+
 
 <!-- NOT CHANGE DIV -->
 <!------------------------------------------------------->
@@ -604,7 +506,7 @@ El Kayyûm - 444</strong><input style="display: none" id="Kayyûm" type="checkbo
 <tr><td class="block_with_text" style="display:block;">
 Kaim olan</td></tr>
 <tr><td><strong>
-El Muizz - 235</strong><input style="display: none" id="Muizz" type="checkbox" class="chekboxInput">
+El Muizz - 236</strong><input style="display: none" id="Muizz" type="checkbox" class="chekboxInput">
 <label for="Muizz"></label></td></tr>
 <tr><td class="block_with_text" style="display:block;">
 İzzet veren</td></tr>
@@ -946,7 +848,7 @@ Mukaddes olan</td></tr>
 19/MERYEM-17</a><br/>Fettehazet min dûnihim hicâben fe erselnâ ileyhâ rûhanâ fe temessele lehâ beşeren seviyyâ(seviyyen).</th></tr>
 <!------------------------------------------------------->
 <tr><td><strong>
-El Hafîz - 1440</strong><input style="display: none" id="Hafîz" type="checkbox" class="chekboxInput">
+El Hafîz - 1140</strong><input style="display: none" id="Hafîz" type="checkbox" class="chekboxInput">
 <label for="Hafîz"></label></td></tr>
 <tr><td class="block_with_text" style="display:block;">
 Hıfzeden, saklayan</td></tr>
@@ -1208,7 +1110,7 @@ El Musavvir - 688</strong><input style="display: none" id="Musavvir" type="check
 <tr><td class="block_with_text" style="display:block;">
 Tasvir eden</td></tr>
 <tr><td><strong>
-El Mecîd - 253</strong><input style="display: none" id="Mecîd" type="checkbox" class="chekboxInput">
+El Mecîd - 258</strong><input style="display: none" id="Mecîd" type="checkbox" class="chekboxInput">
 <label for="Mecîd"></label></td></tr>
 <tr><td class="block_with_text" style="display:block;">
 Şanı, gücü olan</td></tr>
@@ -1435,6 +1337,5 @@ Allah hepinizden sonsuz razı olsun.</p><br/>
 <!-- END FOOTER --> </footer>
  
  <!--********************************************-->
-
 </body>
 </html>
