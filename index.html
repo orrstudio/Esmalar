@@ -20,21 +20,24 @@
 				background-color: #005959;
 				text-align:center;}
 	     strong {	font-size: 80px;}
-.beautifully {
-				text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow; 
+.beautifully {		text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow; 
 				padding: 180px 0.5em 0.2em 0.5em; 
 				color: LightYellow; 
-				font-size: 80px; 
+				font-size: 90px; 
 				font-family: 'Arial'; 
 				font-weight: bold;}
-.beautifullyFooter {
-				text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow; 
+.beautifullyDate {color: Yellow; 
+				display:block; 
+				text-align: center; 
+				padding: 15px 0.5em 15px 0.5em; 
+				font-size: 36px; 
+				font-family: Arial;}				
+.beautifullyFooter{text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow; 
 				padding: 0.5em 0.5em 0.2em 0.5em; 
 				color: LightYellow; 
 				font-size: 60px; 
 				font-family: 'Arial'; 
 				font-weight: bold;}
-
 /* END BODY STYLE */
 
 /* TABLES STYLE */
@@ -137,7 +140,7 @@ input[type=checkbox] + label:before {content: "\1f497";
      <!-- LOGO -->
      <div class="logo">&nbsp;ESMAÜL HÜSNA</div>	
      <!-- NAVIGATION MENU -->
-
+<div>
 <button id="ButtonMENU" onclick="BtnMENU()" class="menuBTN"> &nbsp;<i class="fa fa-bars"></i>&nbsp;</button>
 <button id="ButtonMENUX" onclick="BtnMENUX()" class="menuBTN" style="display:none;">
 &nbsp;<i class="fa fa-times"></i>&nbsp;</button>
@@ -342,7 +345,7 @@ if (result) {$("[class='chekboxInput']:checked").prop("checked", false);} else {
 <div id="myDIV7" align="center" class="beautifully" style="display:none">
 	VII - PAZAR</div>		
 	
-<div align="center" style="color: Yellow; display:block; text-align: center; padding: 15px 0.5em 15px 0.5em; font-size: 40px; font-family: Arial;"">
+<div align="center" class="beautifullyDate">
        <!-- DATE -->
 <script language="javascript" type="text/javascript">
 	var d = new Date();
