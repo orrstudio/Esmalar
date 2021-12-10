@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html>
-<head><meta charset="UTF-8"><title>ESMAÜL HÜSNA</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>  
-</head>
+<!DOCTYPE>
+<html lang="tr">
+	<head>
+		<meta charset=utf-8>
+			<title>ESMAÜL HÜSNA</title>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+					<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>  
+	</head>
 <body>
 
 <!--********************************************-->
 
-<!-- STYLES --><style>
+<!-- STYLES -->
+<style>
 
 /* BODY STYLE */
 			p {	font-family: 'Arial';}
@@ -19,7 +22,7 @@
 	     strong {	font-size: 80px;}
 .beautifully {
 				text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow; 
-				padding: 120px 0.5em 0.2em 0.5em; 
+				padding: 180px 0.5em 0.2em 0.5em; 
 				color: LightYellow; 
 				font-size: 80px; 
 				font-family: 'Arial'; 
@@ -79,7 +82,7 @@ input[type=checkbox] + label:before {content: "\1f497";
 					display:inline-block;
 					border: 0px;
 					text-align: right; 
-					font-size: 60px;}
+					font-size: 80px;}
 .menuBTNHeart {	color: LightYellow;
 					background-color: SeaGreen;
 					display:inline-block;
@@ -114,7 +117,7 @@ input[type=checkbox] + label:before {content: "\1f497";
 /* NAVBAR STYLING STARTS */
 .navbar { 		display: flex; 
 				justify-content: space-between; 
-				padding: 10px;
+				padding: 25px;
 				background-color:SeaGreen;
 				font-weight: bold;
 				position: fixed;
@@ -122,7 +125,7 @@ input[type=checkbox] + label:before {content: "\1f497";
 				z-index: 1000;}
 /* LOGO */
 .logo {			color: LightYellow; 
-				font-size: 60px;}
+				font-size: 80px;}
 .menu {			position: absolute; right: 0; left: 0;}
 
 </style> 
@@ -130,6 +133,7 @@ input[type=checkbox] + label:before {content: "\1f497";
 
      <!-- NAVBAR -->
   <nav class="navbar" id="top_nav">
+
      <!-- LOGO -->
      <div class="logo">&nbsp;ESMAÜL HÜSNA</div>	
      <!-- NAVIGATION MENU -->
@@ -148,7 +152,7 @@ input[type=checkbox] + label:before {content: "\1f497";
        </div>  
 
 <!-- MENUSECTION DIV -->
-<div id="MENUSECTION" style="margin-top: 75px; display:none; background-color: MediumSeaGreen;" class="menu">
+<div id="MENUSECTION" style="margin-top: 100px; display:none; background-color: MediumSeaGreen;" class="menu">
 
 <!-- GROUPBUTTONS DIV -->
 <div id="GroupButtons" style="display:block; padding: 0.5em 0em 0em 0em; font-size: 50px; font-family: Arial;" class="btn-group" align="center">
@@ -161,6 +165,8 @@ input[type=checkbox] + label:before {content: "\1f497";
 <button onclick="myFunction6()">VI - CUMARTESİ</button>
 <button onclick="myFunction7()">VII - PAZAR</button>
 <script>
+
+
 function myFunction1() {
 document.getElementById('myDIV1').style.display = 'block';
 document.getElementById('myDIV11').style.display = 'block';
@@ -287,6 +293,7 @@ document.getElementById('myDIV77').style.display = 'block';
         document.getElementById('MENUSECTION').style.display = "none";
         document.getElementById('ButtonMENU').style.display = "block";
         document.getElementById('ButtonMENUX').style.display = "none";}
+        
 </script>
 <!-- END HAFTA BUTTONS & scripts -->
 </div> 
@@ -319,7 +326,8 @@ if (result) {$("[class='chekboxInput']:checked").prop("checked", false);} else {
    <!-- END NAVBAR -->  
    
 <!-- WEEK NAME DIV's -->
-<div id="myDIV1" align="center" class="beautifully" style="display:block">
+
+<div id="myDIV1" align="center" class="beautifully" style="display:none">
 	I - PAZARTESİ</div>	
 <div id="myDIV2" align="center" class="beautifully" style="display:none">
 	II - SALI</div>	
@@ -333,6 +341,17 @@ if (result) {$("[class='chekboxInput']:checked").prop("checked", false);} else {
 	VI - CUMARTESİ</div>	
 <div id="myDIV7" align="center" class="beautifully" style="display:none">
 	VII - PAZAR</div>		
+	
+<div align="center" style="color: Yellow; display:block; text-align: center; padding: 15px 0.5em 15px 0.5em; font-size: 40px; font-family: Arial;"">
+       <!-- DATE -->
+<script language="javascript" type="text/javascript">
+	var d = new Date();
+	var day=new Array("PAZAR","PAZARTESİ","SALI","ÇARŞAMBA","PERŞEMBE","CUMA","CUMARTESİ");
+	var month=new Array("Ocak","Şubat","Mart","Nisan","Mayıs","Haziran",
+"Temmuz","Ağustos","Eylül","Ekim","Kasım","Aralık");
+	document.write("Bu gün: ",day[d.getDay()]+", "+d.getDate()+" "+month[d.getMonth()]+" "+d.getFullYear());
+</script>
+</div>	
 <!-- END WEEK NAME DIV's -->
 
 <!-- NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
@@ -1337,5 +1356,31 @@ Allah hepinizden sonsuz razı olsun.</p><br/>
 <!-- END FOOTER --> </footer>
  
  <!--********************************************-->
+
+<!-- WEEKDAY CHOISE TO OPEN PAGE -->
+<script>
+ var now = new Date();
+var HaftaDay=now.getDay()
+if (HaftaDay === 1) {
+  myFunction1();
+} else {
+  if (HaftaDay === 2) {
+  myFunction2();
+} else {
+  if (HaftaDay === 3) {
+  myFunction3();
+} else {
+  if (HaftaDay === 4) {
+  myFunction4();
+} else {
+  if (HaftaDay === 5) {
+  myFunction5();
+} else {
+  if (HaftaDay === 6) {
+  myFunction6();
+} else {
+  myFunction7();};};};};};}
+</script>
+ 
 </body>
 </html>
