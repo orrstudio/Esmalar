@@ -1,0 +1,182 @@
+p {
+    font-family: "Arial";
+  }
+  
+  a {
+    color: LightYellow;
+    font-weight: bold;
+  }
+  
+  body {
+    font-family: "Arial";
+    background-color: #005959;
+    text-align: center;
+  }
+  
+  strong {
+    font-size: 80px;
+  }
+  
+  .beautifully {
+    text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow;
+    padding: 180px 0.5em 0.2em 0.5em;
+    color: LightYellow;
+    font-size: 90px;
+    font-family: "Arial";
+    font-weight: bold;
+  }
+  
+  .beautifullyDate {
+    color: Yellow;
+    text-align: center;
+    padding: 25px 0.5em 25px 0.5em;
+    font-size: 1.5em !important;
+  }
+  
+  .beautifullyFooter {
+    text-shadow: 0px 0px 100px GreenYellow, 0 0 1em GreenYellow;
+    padding: 0.5em 0.5em 0.2em 0.5em;
+    color: LightYellow;
+    font-size: 60px;
+    font-family: "Arial";
+    font-weight: bold;
+  }
+  
+  /* TABLES STYLE */
+
+  table {
+    color: LightYellow;
+    font-family: "Arial";
+    text-align: left;
+    border-collapse: collapse;
+    background-color: #01171c;
+    margin: auto;
+    width: 96%;
+  }
+  
+  table th {
+    font-family: "Arial";
+    color: LightYellow;
+    font-size: 70px;
+    text-align: left;
+    padding: 0.6em 0.5em 0.6em 0.5em;
+    background-color: #004545;
+  }
+  
+  table td {
+    border: 2px solid Moccasin;
+    font-family: "Arial";
+    font-size: 50px;
+    text-align: left;
+    color: Moccasin;
+    padding: 0.6em 0.5em 0.6em 0.5em;
+    border-bottom: 2px solid Moccasin;
+    background-color: #003333;
+  }
+  
+  /* CHEKBOX STYLE */
+  
+  input[type="checkbox"] + label:before {
+    content: "\1f497";
+    float: right;
+    font-family: FontAwesome;
+    font-size: 60px;
+  }
+  
+  input[type="checkbox"]:checked + label:before {
+    content: "\1f49a";
+  }
+  
+  /* BUTTONS STYLE */
+
+  .PlayButton {
+    display: inline-block;
+    height: 80px;
+    border-radius: 2em;
+    font-size: 80px;
+    text-align: center;
+    margin: 25px 0px 0px 0px;
+    padding: 1px 20px 1.01em 20px;
+    color: LightYellow;
+    background-color: SeaGreen;
+    border: solid 2px LightYellow;
+    vertical-align: bottom;
+  }
+  
+  .menuBTN {
+    color: LightYellow;
+    background-color: SeaGreen;
+    display: inline-block;
+    border: 0px;
+    text-align: right;
+    font-size: 80px;
+  }
+  
+  .menuBTNHeart {
+    color: LightYellow;
+    background-color: SeaGreen;
+    width: 250px;
+    height: 100px;
+    border: solid 2px LightYellow;
+    border-radius: 20px;
+    font-size: 55px;
+  }
+  
+  .btn {
+    font-size: 60px;
+    width: 190px;
+    height: 100px;
+    border: solid 2px LightYellow;
+    border-radius: 20px;
+    color: LightYellow;
+    background-color: red;
+  }
+  
+  .btn-group button {
+    background-color: SeaGreen;
+    border: 2px solid LightYellow;
+    border-radius: 20px;
+    /*закругленные углы*/
+    color: LightYellow;
+    width: 60%;
+    align-items: center;
+    font-size: 60px;
+    text-align: center;
+    padding: 15px;
+    margin: 0px 0px 20px 0px;
+    /* Расположение от верха, правой стооны, низа и левой стооны */
+  }
+  
+  /* END BUTTONS STYLE */
+  
+  /* NAVBAR  STYLE */
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: SeaGreen;
+    font-weight: normal;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* LOGO */
+  .logo {
+    color: LightYellow;
+    font-size: 80px;
+    margin: auto;
+  }
+  
+  .menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+  }
+  
