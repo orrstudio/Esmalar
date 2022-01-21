@@ -15,8 +15,12 @@
       href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- PLAY & STOP SOUND SCRIPTS -->
+    <script src="PlayStopSound.js"></script>
   </head>
   <body>
+    <!--******* AUDIO PLAYER *******-->
+    <audio id="player"><source id="mp3_src" src="" type="audio/mp3" /></audio>
     <!-- NAVBAR -->
     <nav class="navbar" id="top_nav">
       <!-- LOGO -->
@@ -416,18 +420,22 @@
       <!-- END NEXT SOUND PLAY WITH STOP CURRENT SOUND SCRIPT -->
 
       <!-- NOT CHANGE DIV -->
-      <div
-        style="
-          display: inline-block;
-          color: #ffffe0;
-          text-align: center;
-          font-size: 48px;
-          font-family: Arial;
-          padding: 0.5em 0.5em 0.5em 0.5em;
-        "
-      >
-        EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM<br />BİSMİLLÂHİRRAHMÂNİRRAHÎM
+      <div class="BISMILLAH">
+        <a
+          class="aButton"
+          source="https://www.mihr.com/Videolar/quran_mp3/ayat/001000.mp3"
+        >
+          EÛZUBİLLÂHİMİNEŞŞEYTÂNİRRACÎM</a
+        >
+        <br /><a
+          class="aButton"
+          source="https://www.mihr.com/Videolar/quran_mp3/ayat/001001.mp3"
+        >
+          BİSMİLLÂHİRRAHMÂNİRRAHÎM</a
+        >
       </div>
+      <p class="block_with_text" style="display: block"><br /></p>
+
       <div style="display: block">
         <table>
           <tr>
