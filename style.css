@@ -205,11 +205,11 @@ input[type="checkbox"]:checked+label:before {
   display: block;
   color: #c3ccd4;
   text-align: center;
-  font-size: 48px;
+  /* font-size: 48px;
   font-family: Arial;
-  /* padding: 0.5em 0.5em 0em 0.5em; */
+  padding: 0.5em 0.5em 0em 0.5em;
   width: 90%;
-  margin: auto;
+  margin: auto; */
 }
 
 .aButton {
