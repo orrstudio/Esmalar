@@ -216,3 +216,6 @@ input[type="checkbox"]:checked+label:before {
 .aButton {
   color: #c3ccd4;
 }
+
+@media screen and (min-width: 1081px) { body {font-size: 10px;}}
+/* @media screen and (max-width: 1080px) { .BISMILLAH {font-size: 2vw;}} */
