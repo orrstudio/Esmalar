@@ -204,13 +204,12 @@ input[type="checkbox"]:checked+label:before {
 .BISMILLAH {
   display: block;
   color: #c3ccd4;
-  text-align: left;
-  /* font-size: 48px;
-  font-family: Arial;
+  text-align: center;
+  font-size: 10vw;
+  /* font-family: Arial;
   padding: 0.5em 0.5em 0em 0.5em;
   width: 90%;
-  margin: auto; 
-  */
+  margin: auto;  */
 }
 
 .aButton {
