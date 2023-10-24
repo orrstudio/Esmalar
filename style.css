@@ -209,7 +209,6 @@ input[type="checkbox"]:checked+label:before {
   font-family: Arial;
   padding: 0.5em 0.5em 0em 0.5em;
   width: 90%;
-  display: table;
   margin: auto;
 }
 
