@@ -28,7 +28,7 @@ body {
 }
 
 strong {
-  font-size: 1.2em;
+  font-size: 1.5em;
 }
 
 .beautifully {
@@ -75,7 +75,7 @@ table th {
 
 table td {
   border: 0.03em solid Moccasin;
-  font-size: 2.5em;
+  font-size: 1.8em;
   text-align: left;
   color: Moccasin;
   padding: 0.3em 0.3em 0.3em 0.3em;
@@ -89,7 +89,7 @@ input[type="checkbox"]+label:before {
   content: "\1f497";
   float: right;
   font-family: FontAwesome;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 input[type="checkbox"]:checked+label:before {
