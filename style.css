@@ -168,10 +168,12 @@ input[type="checkbox"]:checked+label:before {
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 0.5em;
+  padding: 0.3em;
   background-color: SeaGreen;
   font-weight: normal;
   position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0%);
   width: 100%;
   z-index: 1000;
 }
@@ -179,7 +181,7 @@ input[type="checkbox"]:checked+label:before {
 /* LOGO */
 .logo {
   color: LightYellow;
-  font-size: 2.5em;
+  font-size: 2em;
   margin: auto;
 }
 
