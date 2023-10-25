@@ -117,15 +117,8 @@
           class="btn-group"
         >
           <!-- HAFATA BUTTONS & scripts -->
-          <div
-
-          display: block;
-          padding: 0 0 1em 0;
-          color: #ffffe0;
-          font-size: 0.8em;
-                  "
-          >
-            Haftanın gününü buradan<br />manual seçe bilirsiniz
+          <div class="menuLabelText">
+            Haftanın gününü buradan<br />manual seçe bilirsiniz<br /><br />
           </div>
           <button onclick="myFunction1()">I - PAZARTESİ</button>
           <button onclick="myFunction2()">II - SALI</button>
@@ -291,11 +284,8 @@
         <div
           id="AyetAnlam"
           style="
-          color: #ffffe0;
           display: block;
-          padding: 1.2em 1em 1.2em 1em;
-          font-size: 1.5em;
-        "
+        " class="menuLabelText"
         >
           Esma Ayetleri ve Anlamı<br />Görüntüsü için
         </div>
@@ -331,12 +321,9 @@
           </script>
         </div>
         <!-- CHEKBOX -->
-        <div
+        <div class="menuLabelText"
           style="
           display: block;
-          padding: 1.2em 1em 1.2em 1em;
-          color: #ffffe0;
-          font-size: 1.5em;
         "
         >
           Tüm onayları silmek için
@@ -345,7 +332,7 @@
           <button onclick="ChekBoxClear()" class="menuBTNHeart">
             &#128154;&#10146;&#128151;
           </button>
-          <p><br></p>
+          <p><br><br></p>
           <script>
             function ChekBoxClear() {
               var e = confirm("Onayları silmek istiyor musunuz?");

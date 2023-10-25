@@ -156,6 +156,11 @@ input[type="checkbox"]:checked+label:before {
   /* Расположение от верха, правой стооны, низа и левой стооны */
 }
 
+.menuLabelText {
+  font-size: 2em;
+  padding: 0.2em;
+}
+
 /* END BUTTONS STYLE */
 
 /* NAVBAR  STYLE */
